@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import './plugins/vuetify'
-import ComunicationWebapp from '@vinnyfs89/comunication-webapp/src/index'
+import ComunicationWebapp from '@vinnyfs89/comunication-webapp'
 import App from './App.vue'
 import VueSocketIO from 'vue-socket.io';
 import $socket from '@vinnyfs89/comunication-webapp/src/modules/websocket/_auxiliares/socket-client-instance';
