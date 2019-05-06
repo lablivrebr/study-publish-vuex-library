@@ -3,8 +3,6 @@ import Vuex from 'vuex'
 import './plugins/vuetify'
 import ComunicationWebapp from '@vinnyfs89/comunication-webapp'
 import App from './App.vue'
-import VueSocketIO from 'vue-socket.io';
-import $socket from '@vinnyfs89/comunication-webapp/src/modules/websocket/_auxiliares/socket-client-instance';
 import Router from 'vue-router';
 
 Vue.use(Vuex)
@@ -16,6 +14,7 @@ const store = new Vuex.Store({
   mutations: {
   }
 });
+Vue.use(ComunicationWebapp, { store });
 
 const router = new Router({
     mode: 'history',
@@ -23,17 +22,16 @@ const router = new Router({
     // routes: ,
 });
 
-Vue.use(ComunicationWebapp, { store });
 
-Vue.use(new VueSocketIO({
-    debug: false,
-    connection: $socket,
-    vuex: {
-        store,
-        actionPrefix: 'Socket_',
-        mutationPrefix: 'Socket_',
-    },
-}));
+// Vue.use(new VueSocketIO({
+//     debug: false,
+//     connection: $socket,
+//     vuex: {
+//         store,
+//         actionPrefix: 'Socket_',
+//         mutationPrefix: 'Socket_',
+//     },
+// }));
 
 Vue.config.productionTip = false;
 

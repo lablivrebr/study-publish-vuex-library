@@ -15,15 +15,15 @@
       </v-btn>
     </v-toolbar>
 
-    <v-content>
-<!--      <HelloWorld/>-->
+    <v-content style="background: darkolivegreen;">
       <comunication-service-notificacao-badge></comunication-service-notificacao-badge>
+      <comunication-service-status></comunication-service-status>
+      <comunication-service-chat></comunication-service-chat>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
