@@ -16,9 +16,9 @@
     </v-toolbar>
 
     <v-content style="background: darkolivegreen;">
-      <comunication-service-notificacao-badge token="token"></comunication-service-notificacao-badge>
-      <comunication-service-status></comunication-service-status>
-      <comunication-service-chat></comunication-service-chat>
+      <communication-service-notificacao-badge token="token"></communication-service-notificacao-badge>
+      <communication-service-status></communication-service-status>
+      <communication-service-chat></communication-service-chat>
     </v-content>
   </v-app>
 </template>

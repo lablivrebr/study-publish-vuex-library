@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import './plugins/vuetify'
-import ComunicationWebapp from '@vinnyfs89/comunication-webapp'
+import ComunicationWebapp from '@vinnyfs89/communication-webapp'
 import App from './App.vue'
 import Router from 'vue-router';
 
