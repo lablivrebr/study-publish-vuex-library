@@ -22,17 +22,6 @@ const router = new Router({
     // routes: ,
 });
 
-
-// Vue.use(new VueSocketIO({
-//     debug: false,
-//     connection: $socket,
-//     vuex: {
-//         store,
-//         actionPrefix: 'Socket_',
-//         mutationPrefix: 'Socket_',
-//     },
-// }));
-
 Vue.config.productionTip = false;
 
 new Vue({
