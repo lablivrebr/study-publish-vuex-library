@@ -5,14 +5,22 @@ import ComunicationWebapp from '@vinnyfs89/comunication-webapp/src/index'
 import App from './App.vue'
 import VueSocketIO from 'vue-socket.io';
 import $socket from '@vinnyfs89/comunication-webapp/src/modules/websocket/_auxiliares/socket-client-instance';
+import Router from 'vue-router';
 
 Vue.use(Vuex)
+Vue.use(Router);
 
 const store = new Vuex.Store({
   state: {
   },
   mutations: {
   }
+});
+
+const router = new Router({
+    mode: 'history',
+    base: process.env.BASE_URL,
+    // routes: ,
 });
 
 Vue.use(ComunicationWebapp, { store });
@@ -31,5 +39,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   store,
+    router,
   render: h => h(App),
 }).$mount('#app')
