@@ -16,7 +16,7 @@
     </v-toolbar>
 
     <v-content style="background: darkolivegreen;">
-      <comunication-service-notificacao-badge></comunication-service-notificacao-badge>
+      <comunication-service-notificacao-badge token="token"></comunication-service-notificacao-badge>
       <comunication-service-status></comunication-service-status>
       <comunication-service-chat></comunication-service-chat>
     </v-content>
@@ -32,8 +32,12 @@ export default {
   },
   data () {
     return {
+        token: localStorage.getItem('token'),
       //
     }
-  }
+  },
+  mounted() {
+      this.token = '';
+  },
 }
 </script>
